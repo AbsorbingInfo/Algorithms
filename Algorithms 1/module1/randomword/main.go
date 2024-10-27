@@ -11,7 +11,16 @@ import (
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
+	var words []string
+	var champion string
 	if len(scanner.Text()) > 0 {
-		fmt.Println(strings.Split(scanner.Text(), " ")[rand.Intn(len(strings.Split(scanner.Text(), " ")))])
+		if len(scanner.Text()) > 0 {
+			for i := 0; i < len(strings.Fields(scanner.Text())); i++ {
+				words = append(words, strings.Fields(scanner.Text())[i])
+			}
+			randomIdx := rand.Intn(len(strings.Split(scanner.Text(), " ")))
+			champion = words[randomIdx]
+		}
 	}
+	fmt.Println(champion)
 }
