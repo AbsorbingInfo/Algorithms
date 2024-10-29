@@ -13,7 +13,7 @@ func NewQuickUnion (size int) *QuickUnion {
 }
 
 func (u *QuickUnion) connected (q int, p int) bool {
-	return u.arr[q] == u.arr[p]
+	return u.root(q) == u.root(p)
 } 
 
 func (u *QuickUnion) union (q int, p int) {

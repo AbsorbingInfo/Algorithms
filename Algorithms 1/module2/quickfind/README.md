@@ -1,8 +1,6 @@
 ### Quick Find
 - int arr of N
 - p and q are connected if they have same element
-- Union method which connects two point/objects
-- Connected method returns boolean if given point/objects are connected
 
 ### Analysis
 - **Initialize**: O(n)
