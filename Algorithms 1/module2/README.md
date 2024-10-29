@@ -10,3 +10,8 @@ Given a set of N objects.
 - Quick find (eager approach)
 - Quick union (lazy approach)
 - Quick union improvement
+
+#### Analysis
+- **Quick Find**: O(n)
+- **Quick Union**: O(n)
+- **Weighted Quick Union with path compression**: O(log n)
